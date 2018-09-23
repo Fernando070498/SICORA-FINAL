@@ -1,0 +1,36 @@
+@model List<SICORA.Models.Periferico>
+
+@{
+    ViewData["Title"] = "Perifericos Gamer (E Y S)";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Tipo </th>
+        <th>Marca </th>
+        <th>Descripcion </th>
+
+    </tr>
+    @foreach (var Periferico in Model)
+    {
+        <tr>
+            <td>@Periferico.Id</td>
+            <td>@Periferico.Nombre</td>
+            <td>@Periferico.tipPe</td>
+            <td>@Periferico.Marca</td>
+            <td>@Periferico.descripcion</td>
+
+            <td>
+                <form method="post" action="/Periferico/borrar">
+                <input type="hidden" name="id_musica" value="@Periferico.Id"/>
+                <button> Borrar </button>
+                </form>
+            </td>
+        </tr>
+    }
+
+</table>
