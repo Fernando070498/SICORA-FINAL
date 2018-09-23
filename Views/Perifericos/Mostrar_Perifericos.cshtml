@@ -1,5 +1,3 @@
-@model List<SICORA.Models.Periferico>
-
 @{
     ViewData["Title"] = "Perifericos Gamer (E Y S)";
 }
@@ -15,22 +13,4 @@
         <th>Descripcion </th>
 
     </tr>
-    @foreach (var Periferico in Model)
-    {
-        <tr>
-            <td>@Periferico.Id</td>
-            <td>@Periferico.Nombre</td>
-            <td>@Periferico.tipPe</td>
-            <td>@Periferico.Marca</td>
-            <td>@Periferico.descripcion</td>
-
-            <td>
-                <form method="post" action="/Periferico/borrar">
-                <input type="hidden" name="id_musica" value="@Periferico.Id"/>
-                <button> Borrar </button>
-                </form>
-            </td>
-        </tr>
-    }
-
 </table>

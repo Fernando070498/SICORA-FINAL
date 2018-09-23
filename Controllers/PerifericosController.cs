@@ -15,10 +15,7 @@ namespace SICORA.Controllers
             return View();
         }
         
-        public IActionResult Registrar_Perifericos()
-        {
-            return View();
-        }
+        
 
     }
 }
