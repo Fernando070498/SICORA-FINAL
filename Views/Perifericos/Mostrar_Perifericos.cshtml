@@ -1,16 +1,110 @@
 @{
-    ViewData["Title"] = "Perifericos Gamer (E Y S)";
+    ViewData["Title"] = "Perifericos Gamers";
 }
 <h2>@ViewData["Title"]</h2>
 <h3>@ViewData["Message"]</h3>
 
-<table class="table table-bordered">
-    <tr>
-        <th>Id</th>
-        <th>Nombre</th>
-        <th>Tipo </th>
-        <th>Marca </th>
-        <th>Descripcion </th>
+<style type="text/css">
+  .boton_personalizado{
+    margin-left: 35%;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #008000;
+    border-radius: 6px;
+    border: 1px solid #008000;
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+  .c-img{ 
+      margin: 1px auto;
+      position: relative;
+      display: flex;
+      position: absolute;
+      align-items: center;
+  }
 
-    </tr>
+  img{
+      position: center;
+      
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-bottom: 15%;
+      
+  }
+ .txt{
+      top:0;
+      color:#ffffff;
+      right: 0;
+      text-align: center;
+      width: 400px;
+      padding-top: 30%;
+      padding-right: 25%;
+      padding-left: 25%;
+      padding-bottom: 30%;
+      position: relative;
+      transition: all .3s;
+      opacity: 0;
+      background-color: black;
+      
+      p{
+          padding: 10px 20px;
+      }    
+  }
+
+.txt:hover{
+    opacity: 1;
+}
+
+h3{
+    margin-top: 0%;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+</style>
+
+<table>
+    
+    <tr>
+        <td><div class="c-img"><img src="~/images/mouse1.jpg" width="450" height="300"></div>
+        
+            <div class="txt"><p>
+            Múltiples botones que pueden configurarse (en el mercado hay de hasta 20 botones). Incluso botones muy específicos como el "botón francotirador" para ciertos juegos en primera persona. También un botón de rueda.
+            </p>
+            </div>
+        </td>
+            
+        <td><div align="center" class="c-img" ><img src="~/images/teclado1.jpg" width="450" height="300" ></div>
+
+            <div class="txt"><p>
+            Los teclados Razer cuentan con una gran capacidad de retroiluminación, para todos aquellos gamers que pasan horas jugando en la oscuridad.
+            </p>
+            </div>
+        </td>
+
+        <td><div class="c-img"><img src="~/images/parlante1.jpg" width="450" height="300" ></div>
+        <div class="txt"><p>
+            El sistema sonoro está compuestos por dos parlantes satélites, un subwoofer, y una caja de control, pertenece a la Serie Genius Sw.
+        </p></div>
+        </td>
+     </tr> 
+     <tr>
+        <td><div class="fondo"><h3>logitech g900 chaos spectrum</h3></div></td>
+        <td><div class="fondo"><h3>Alloy Elite</h3></div></td>
+        <td><div class="fondo"><h3>Genius Sw-g2.1 3000</h3></div></td>
+    </tr> 
+    
+     <tr>
+        <td><button class="boton_personalizado">COMPRAR</button></td>
+        <td><button class="boton_personalizado">COMPRAR</button></td>
+        <td><button class="boton_personalizado">COMPRAR</button></td>
+     </tr>
+    
 </table>
