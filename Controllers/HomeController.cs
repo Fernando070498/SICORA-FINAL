@@ -18,6 +18,7 @@ namespace SICORA.Controllers
         public IActionResult Principal()
         {
             return View();
+            
         }
 
         public IActionResult Error()
