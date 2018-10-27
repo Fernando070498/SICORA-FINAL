@@ -27,33 +27,24 @@
                     <span class="icon-bar"></span>
                 </button>
                 
-                
+                 <a asp-area="" asp-controller="Home" asp-action="Principal" class="navbar-brand">SICORA</a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="~/Home/Principal">PRINCIPAL</a></li>
-                    
-                    <li><a href="~/Perifericos/Mostrar_Perifericos">Perifericos</a></li>
-                    
-                    <li><a href="~/Juegos/Mostrar_Juegos">Juegos</a></li>
-
-                    <li><a href="~/Programas/Mostrar_Programas">Programas</a></li>
-
-                    <li><a href="~/Eventos/Mostrar_Eventos">Eventos y competencias</a></li>
-
-                    <li>
-                        <a href="~/Home/Contact">Contactenos</a>
-                    </li>
+                <ul class="nav navbar-nav navbar-center">
+                    <li><a asp-area="" asp-controller="Perifericos" asp-action="Mostrar_Perifericos">Perifericos</a></li>
+                    <li><a asp-area="" asp-controller="Juegos" asp-action="Mostrar_Juegos">Juegos</a></li>
+                    <li><a asp-area="" asp-controller="Programas" asp-action="Mostrar_Programas">Programas</a></li>
+                    <li><a asp-area="" asp-controller="Eventos" asp-action="Mostrar_Eventos">Eventos</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">Contact</a></li>
+                
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - SICORA</p>
-        </footer>
+        
+        
     </div>
 
     <environment include="Development">

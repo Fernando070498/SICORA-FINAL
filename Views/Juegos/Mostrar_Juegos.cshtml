@@ -1,119 +1,430 @@
 @{
     ViewData["Title"] = "JUEGOS";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@ViewData["Message"]</h3>
 
-<style type="text/css">
-  .boton_personalizado{
-    margin-left: 35%;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 1px solid #1883ba;
-  }
-  .boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-  .c-img{ 
-      margin: 1px auto;
-      position: relative;
-      display: flex;
-      position: absolute;
-      align-items: center;
-  }
-
-  img{
-      position: center;
-      height: 400px;
-      padding-left: 15%;
-      padding-right: 15%;
-      padding-bottom: 15%;
-      
-  }
- .txt{
-      top:0;
-      color:#ffffff;
-      right: 0;
-      text-align: center;
-      width: 400px;
-      padding-top: 30%;
-      padding-right: 25%;
-      padding-left: 25%;
-      padding-bottom: 30%;
-      position: relative;
-      transition: all .3s;
-      opacity: 0;
-      background-color: black;
-      
-      p{
-          padding: 10px 20px;
-      }    
-  }
-
-.txt:hover{
-    opacity: 1;
+ <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+      body{
+          background-color:rgb(41, 43, 43);
+      }
+      .item {
+      display: block;
+      width: 100%;
+      height: 600px;
 }
-
-h3{
-    margin-top: 0%;
-    padding: 20px 30px;
+.item img {
+      height: 100%;
+      width: 100%;
+}
+figure{
+    background-color: black;
+}
+#blog h4{
+    text-align: center;
+    color: #999;
+}
+#blog .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#blog article {
+    margin: 18px;
+    background-color: #111;
+}
+#blog img{
+    width: 100%;
+    width: 290px;
+    height: 250px;  
+    
+}
+#info {
+    background:rgb(19, 18, 18);
+    color: #fff;
     text-align: center;
 }
-
-</style>
-
-<table>
+#info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.info-pro{
+    margin: 40px;
+}
+.info-pro img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    padding: 40px;
+    color: white;
     
-    <tr>
-        <td><div class="c-img"><img src="~/images/overwatch1.jpg" ></div>
-        
-            <div class="txt"><p>
-            Únete a la fuerza legendaria de soldados, científicos, aventureros 
-            y superdotados que componen Overwatch. Elige tu héroe e ingresa a los 
-            campos de batalla del mañana. Toma tu lugar en Overwatch.
-            </p>
-            </div>
-        </td>
+}
+.container-footer-all{
+    width: 100%;
+    max-width: 1600px;
+    margin: auto;
+}
+.container-body{
+    display: flex;
+    justify-content: center;
+}
+.column1{
+    max-width: 400px;
+}
+.column1 h1{
+    font-size: 22px;
+}
+.column1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+.column2{
+    max-width: 400px;
+}
+.column2 h1{
+    font-size: 22px;
+}
+.row {
+    margin-top 20px;
+    display: flex;
+}
+.row img{
+    width: 35px;
+    height: 36px;
+}
+.row label{
+    margin-top:10px;
+    margin-left: 20px;
+    color:  #C7C7C7;
+}
+.column3{
+    max-width: 400px;
+}
+.column3 h1{
+    font-size: 22px;
+}
+.row2{
+    margin-top: 20px;
+}
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+.container-footer{
+    width: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+}
+.copyright{
+    color: #C7C7C7;
+}
+.copyrigth a{
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+.information a{
+    text-decoration: none;
+    color: white;
+}
+footer .column1, .column2, .column3 {
+    margin: 65px;
+}
+.img1{
+    width: 100%;
+    width: 290px;
+    
+}
+.info-img{
+    width: 100%;
+    width: 290px;
+    height: 250px;
+    position: absolute;
+    background-color: #101010;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s;
+}
+.info-img:hover{
+    opacity: 1;
+}
+.info-1{
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    color: white;
+    opacity: 1;
+}
+.titulo-container{
+    text-align: center;
+    color: white;
+    width: 100%;
+    background: #101010;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.hr{
+    margin-top: 30px;
+}
+.trailer{
+    text-align: center;
+    
+}
+.button1:hover {
+    background-color: white;
+    color: black;
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button1 {
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    padding: 15px;
+    padding-left: 42%;
+    padding-right: 43%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: none;
+}
+.button2{
+    background-color: #555555;
+    color: white;
+    border: 2px solid #555555;
+    padding: 15px;
+    padding-left: 40%;
+    padding-right: 39.8%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration-line: none;
+}
+.button2:hover{
+    background-color: white;
+    color: black;
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    </style> 
+<body>
+
+		
+		<div class="col-md-12">
             
-        <td><div class="c-img"><img src="~/images/pubg1.jpg"  ></div>
-
-            <div class="txt"><p>
-            PUBG es un videojuego de acción multijugador que nos trasladará a una enorme extensión de 
-            terreno en el que el objetivo primario será sobrevivir y matar a nuestros competidores.
-            </p>
-            </div>
-        </td>
-
-        <td><div class="c-img"><img src="~/images/spiderman1.jpg"  ></div>
-        <div class="txt"><p>
-            No se trata del Spider-Man que has conocido antes ni visto en alguna otra parte. 
-            Encontraremos a un experimentado Peter Parker, más capacitado en su 
-            lucha contra el crimen organizado de la ciudad de Nueva York.
-        </p></div>
-        </td>
-     </tr> 
-     <tr>
-        <td><div class="fondo"><h3>Overwatch</h3></div></td>
-        <td><div class="fondo"><h3>Playerunknown's battlegrounds</h3></div></td>
-        <td><div class="fondo"><h3>Spiderman Ps4</h3></div></td>
-    </tr> 
-     <tr>
-        <td><div class="fondo"><a href="https://www.youtube.com/watch?v=Xq9X-Q-b4hY" class="boton_personalizado" role="button" aria-pressed="true">Tráiler</a></div></td>
-        <td><div class="fondo"><a href="https://www.youtube.com/watch?v=tKlRN2YpxRE" class="boton_personalizado" role="button" aria-pressed="true">Tráiler</a></div></td>
-        <td><div class="fondo"><a href="https://www.youtube.com/watch?v=utVr-n0MaU0" class="boton_personalizado" role="button" aria-pressed="true">Tráiler</a></div></td>
-     </tr>
-     <tr>
-        <td><button class="boton_personalizado">COMPRAR</button></td>
-        <td><button class="boton_personalizado">COMPRAR</button></td>
-        <td><button class="boton_personalizado">COMPRAR</button></td>
-     </tr>
+			<div id="carousel-1" class="carousel slide" data-ride="carousel" data-interval="5000">
+				
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-1" data-slide-to="0" class="active" ></li>
+					<li data-target="#carousel-1" data-slide-to="1"	></li>
+					<li data-target="#carousel-1" data-slide-to="2"	></li>
+				</ol>
+				
+				
+				<div class="carousel-inner" role="listbox">
+					
+					<div class="item active">
+						<img class="d-block w-100" src="~/images/pubg.jpg" alt="" class="img-responsive">
+						<div class="carousel-caption">
+							
+                    </a>
+							
+						</div>
+					</div>
+					
+					<div class="item ">
+						<img src="~/images/callofduty.jpg" class="d-block w-100" class="img-responsive" alt="">
+						<div class="carousel-caption ">
+							
+							
+						</div>
+					</div>
+					
+					<div class="item">
+						<img src="~/images/Fortnitemin.jpg" class="d-block w-100" alt="" class="img-responsive">
+						<div class="carousel-caption ">
+			   				
+						</div>
+					</div>
+				</div>
+				
+				<a href="#carousel-1" class="left carousel-control" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Anterior</span>
+				</a>
+				<a href="#carousel-1" class="right carousel-control" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Siguiente</span>
+				</a>
+			</div>
+		</div>
+	</div>
     
-</table>
+
+<section id="blog">
+    <h3 class="titulo-container">TODOS LOS JUEGOS </h3>
+    <div class="contenedor">
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Es un videojuego de acción multijugador donde el 
+                    objetivo primario será sobrevivir y matar a nuestros competidores. </p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+            <img src="~/images/pubg1.jpg">
+            <h4>Playerunknown's Battlegrounds</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Encontraremos a un experimentado Peter Parker, más capacitado en su 
+            lucha contra el crimen organizado de la ciudad de Nueva York. </p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+            <img src="~/images/spiderman1.jpg">
+            <h4>Spiderman</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/Persona5.jpg">
+            <h4>Persona 5</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+        <article>
+            <div class="img1">
+                <div class="info-img">
+                <p class="info-1">Elije tu héroe e ingresa a los 
+                campos de batalla del mañana.Toma tu lugar en Overwatch.</p><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" target="_blank" class="button1" role="button" aria-pressed="true">Tráiler</a><hr>
+                <a href="https://www.youtube.com/watch?v=pYC44YPb_5k" class="button2" role="button" aria-pressed="true">Comprar</a>
+                </div>
+                </div>
+                <img src="~/images/overwatch1.jpg">
+            <h4>Overwatch</h4>
+        </article>
+    </div>
+</section>
+
+
+    
+</body>
+</html>
