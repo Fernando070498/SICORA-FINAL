@@ -12669,11 +12669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Clase\\Desktop\\sicorazo\\SICORA-FINAL\\SICORA.csproj",
+      "projectUniqueName": "C:\\Users\\Clase\\Desktop\\sicora-commit\\SICORA-FINAL\\SICORA.csproj",
       "projectName": "SICORA",
-      "projectPath": "C:\\Users\\Clase\\Desktop\\sicorazo\\SICORA-FINAL\\SICORA.csproj",
+      "projectPath": "C:\\Users\\Clase\\Desktop\\sicora-commit\\SICORA-FINAL\\SICORA.csproj",
       "packagesPath": "C:\\Users\\Clase\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Clase\\Desktop\\sicorazo\\SICORA-FINAL\\obj\\",
+      "outputPath": "C:\\Users\\Clase\\Desktop\\sicora-commit\\SICORA-FINAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
