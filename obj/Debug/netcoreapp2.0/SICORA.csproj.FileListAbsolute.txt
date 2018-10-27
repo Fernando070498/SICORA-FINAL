@@ -108,3 +108,14 @@ C:\Users\Clase\jose2\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfoInp
 C:\Users\Clase\jose2\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfo.cs
 C:\Users\Clase\jose2\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.dll
 C:\Users\Clase\jose2\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.pdb
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\bin\Debug\netcoreapp2.0\SICORA.deps.json
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\bin\Debug\netcoreapp2.0\SICORA.runtimeconfig.json
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\bin\Debug\netcoreapp2.0\SICORA.runtimeconfig.dev.json
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\bin\Debug\netcoreapp2.0\SICORA.dll
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\bin\Debug\netcoreapp2.0\SICORA.pdb
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.csprojAssemblyReference.cache
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.csproj.CoreCompileInputs.cache
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfoInputs.cache
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.AssemblyInfo.cs
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.dll
+C:\Users\Clase\Desktop\sicorazo\SICORA-FINAL\obj\Debug\netcoreapp2.0\SICORA.pdb
