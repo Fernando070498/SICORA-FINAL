@@ -14,6 +14,10 @@ namespace SICORA.Controllers
         {
             return View();
         } 
+        public IActionResult Agregar_Juegos()
+        {
+            return View();
+        }
 
     }
 }

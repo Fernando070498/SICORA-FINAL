@@ -12663,24 +12663,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jose Flores Montes\\.nuget\\packages\\": {},
+    "C:\\Users\\Sebas\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jose Flores Montes\\Desktop\\sicora prueba\\SICORA-FINAL\\SICORA.csproj",
+      "projectUniqueName": "C:\\Users\\Sebas\\Desktop\\Version 5.3\\SICORA-FINAL\\SICORA.csproj",
       "projectName": "SICORA",
-      "projectPath": "C:\\Users\\Jose Flores Montes\\Desktop\\sicora prueba\\SICORA-FINAL\\SICORA.csproj",
-      "packagesPath": "C:\\Users\\Jose Flores Montes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jose Flores Montes\\Desktop\\sicora prueba\\SICORA-FINAL\\obj\\",
+      "projectPath": "C:\\Users\\Sebas\\Desktop\\Version 5.3\\SICORA-FINAL\\SICORA.csproj",
+      "packagesPath": "C:\\Users\\Sebas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sebas\\Desktop\\Version 5.3\\SICORA-FINAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jose Flores Montes\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
