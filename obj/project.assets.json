@@ -12669,11 +12669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Jose Flores Montes\\Desktop\\sicora paolo\\SICORA-FINAL\\SICORA.csproj",
+      "projectUniqueName": "C:\\Users\\Jose Flores Montes\\Desktop\\sicora prueba\\SICORA-FINAL\\SICORA.csproj",
       "projectName": "SICORA",
-      "projectPath": "c:\\Users\\Jose Flores Montes\\Desktop\\sicora paolo\\SICORA-FINAL\\SICORA.csproj",
+      "projectPath": "C:\\Users\\Jose Flores Montes\\Desktop\\sicora prueba\\SICORA-FINAL\\SICORA.csproj",
       "packagesPath": "C:\\Users\\Jose Flores Montes\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Jose Flores Montes\\Desktop\\sicora paolo\\SICORA-FINAL\\obj\\",
+      "outputPath": "C:\\Users\\Jose Flores Montes\\Desktop\\sicora prueba\\SICORA-FINAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

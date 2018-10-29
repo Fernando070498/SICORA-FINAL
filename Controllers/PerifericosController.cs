@@ -14,7 +14,10 @@ namespace SICORA.Controllers
         {
             return View();
         }
-        
+        public IActionResult Agregar_Perifericos()
+        {
+            return View();
+        }
         
 
     }
